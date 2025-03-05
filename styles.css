@@ -87,6 +87,26 @@ body {
     margin-left: 15px;
 }
 
+@media (max-width: 768px) {
+    /* Show the hamburger on smaller screens */
+    .hamburger {
+        display: block;
+    }
+    
+    /* Hide nav-links by default on mobile */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    /* When active, show the nav-links */
+    .nav-container.active .nav-links {
+        display: flex;
+    }
+}
+
+
 /* Services Grid */
 .grid-services {
     display: grid;
