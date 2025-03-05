@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweitzer Technologies LLC</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="contact-form.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Sweitzer Technologies Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages\about.html">About Us</a></li>
+                <li><a href="pages\services.html">Services</a></li>
+                <li><a href="pages\contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        </div>
+    </nav>    
+
+    <header class="hero">
+        <div class="hero-content">
+            <img src="images/logo.png" alt="Sweitzer Technologies Logo" class="hero-logo">
+            <div class="hero-text">
+                <h1>Technology Simplified</h1>
+            </div>
+        </div>
+    </header>s
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                At Sweitzer Technologies LLC, we deliver top-tier IT solutions tailored for small to medium businesses and 
+                residential clients across Aurora, Monett, Mt. Vernon, Springfield, and Joplin. Our comprehensive services—
+                including managed IT support, Cloud Systems, computer repairs, and cybersecurity—ensure that your technology 
+                runs smoothly, securely, and affordably. We’re dedicated to minimizing downtime and reducing costs with 
+                custom IT strategies designed to meet your unique needs.
+            </p>
+        </section>
+        
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service">
+                    <img src="images/cybersecurity.jpg" alt="Cybersecurity Solutions">
+                    <h3>Cybersecurity Solutions</h3>
+                    <p>Protect your valuable data with our advanced cybersecurity solutions. We provide proactive measures 
+                       to safeguard your business from threats and ensure data integrity.</p>
+                </div>
+                <div class="service">
+                    <img src="images/computer-repair.jpg" alt="Computer Repairs">
+                    <h3>Computer Repairs</h3>
+                    <p>We offer specialized computer repair services for businesses and residential clients, fixing both 
+                       hardware and software issues with expertise and efficiency.</p>
+                </div>
+                <div class="service">
+                    <img src="images/managed-it.jpg" alt="Managed IT Support">
+                    <h3>Managed IT Support</h3>
+                    <p>Our managed IT support services provide comprehensive oversight and maintenance for your business's 
+                       technology infrastructure, ensuring smooth operations and minimizing downtime.</p>
+                </div>
+            </div>
+        </section>        
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-buttons" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;">
+                <button id="emailBtn" class="contact-btn">📧 Email Us</button>
+                <button id="callBtn" class="contact-btn">📞 Call Us</button>
+            </div>
+            
+            <div id="zf_div_8Izxyfj8ae0T9D7kMEfmFuWp7MXDhpjqiKVvlnmJUiU" style="width: 100%; max-width: 800px; margin: auto;"></div>
+            <script type="text/javascript">
+                (function() {
+                    try {
+                        var f = document.createElement("iframe");
+                        f.src = 'https://forms.zohopublic.com/josephsweitzerte1/form/ContactUs/formperma/8Izxyfj8ae0T9D7kMEfmFuWp7MXDhpjqiKVvlnmJUiU?zf_rszfm=1';
+                        f.style.border="none";
+                        f.style.width="100%";
+                        f.style.minHeight="1000px";
+                        f.style.transition="all 0.5s ease";
+                        f.setAttribute("aria-label", 'Contact Us');
+    
+                        var d = document.getElementById("zf_div_8Izxyfj8ae0T9D7kMEfmFuWp7MXDhpjqiKVvlnmJUiU");
+                        d.appendChild(f);
+    
+                        window.addEventListener('message', function (){
+                            var evntData = event.data;
+                            if( evntData && evntData.constructor == String ){
+                                var zf_ifrm_data = evntData.split("|");
+                                if ( zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3 ) {
+                                    var zf_perma = zf_ifrm_data[0];
+                                    var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px";
+                                    var iframe = document.getElementById("zf_div_8Izxyfj8ae0T9D7kMEfmFuWp7MXDhpjqiKVvlnmJUiU").getElementsByTagName("iframe")[0];
+                                    if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) {
+                                        if ( iframe.style.height !== zf_ifrm_ht_nw ) {
+                                            iframe.style.height = zf_ifrm_ht_nw;
+                                        }
+                                    }
+                                }
+                            }
+                        }, false);
+                    } catch(e) {
+                        console.error("Error loading Zoho form:", e);
+                    }
+                })();
+            </script>
+        </section>               
+        
+        <footer>
+            <p>&copy; 2025 Sweitzer Technologies LLC. All rights reserved.</p>
+            <p><a href="pages/termsandconditions.html">Terms and Conditions</a></p>
+            <p><a href="pages/privacypolicy.html">Privacy Policy</a></p>
+        </footer>        
+</body>
+</html>

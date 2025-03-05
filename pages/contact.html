@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sweitzer Technologies LLC</title>
+    <meta name="description" content="Get in touch with Sweitzer Technologies LLC. Contact us for IT solutions, support, and consultations.">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="Sweitzer Technologies Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        </div>
+    </nav>    
+    
+    <header class="hero" style="background: url('../images/contact-hero.jpg') center/cover no-repeat; height: 400px; display: flex; align-items: center; justify-content: center; text-align: center;">
+        <div class="hero-text"> 
+            <img src="../images/logo.png" alt="Sweitzer Technologies Logo" style="max-width: 150px; display: block; margin: 0 auto;"> 
+            <h1>Contact Us</h1>
+        </div>
+    </header>
+    
+    <div class="container contact-info">
+        <div class="contact-details">
+            <h2>Contact Information</h2>
+            <p><strong>Phone:</strong> (417) 847-7596</p>
+            <p><strong>Email:</strong> info@sweitzertechnologies.com</p>
+            <p><strong>Location:</strong> Aurora, Missouri (Remote-Based Service)</p>
+        </div>
+    </div>
+    
+    <div style="height: 40px;"></div> <!-- Spacer added here -->
+    
+    <section class="contact-form-section">
+        <div id="zf_div_8Izxyfj8ae0T9D7kMEfmFuWp7MXDhpjqiKVvlnmJUiU"></div>
+        <script type="text/javascript">
+            (function() {
+                try {
+                    var f = document.createElement("iframe");
+                    f.src = 'https://forms.zohopublic.com/josephsweitzerte1/form/ContactUs/formperma/8Izxyfj8ae0T9D7kMEfmFuWp7MXDhpjqiKVvlnmJUiU?zf_rszfm=1';
+                    f.style.border="none";
+                    f.style.height="600px";
+                    f.style.width="100%";
+                    f.style.transition="all 0.5s ease";
+                    f.setAttribute("aria-label", 'Contact Us');
+    
+                    var d = document.getElementById("zf_div_8Izxyfj8ae0T9D7kMEfmFuWp7MXDhpjqiKVvlnmJUiU");
+                    d.appendChild(f);
+                    window.addEventListener('message', function (){
+                        var evntData = event.data;
+                        if( evntData && evntData.constructor == String ){
+                            var zf_ifrm_data = evntData.split("|");
+                            if ( zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3 ) {
+                                var zf_perma = zf_ifrm_data[0];
+                                var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px";
+                                var iframe = document.getElementById("zf_div_8Izxyfj8ae0T9D7kMEfmFuWp7MXDhpjqiKVvlnmJUiU").getElementsByTagName("iframe")[0];
+                                if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) {
+                                    iframe.style.height = zf_ifrm_ht_nw;
+                                }
+                            }
+                        }
+                    }, false);
+                } catch(e) {
+                    console.error("Error loading Zoho form:", e);
+                }
+            })();
+        </script>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Sweitzer Technologies LLC. All rights reserved.</p>
+        <p><a href="termsandconditions.html">Terms and Conditions</a> | <a href="privacypolicy.html">Privacy Policy</a></p>
+    </footer>        
+</body>
+</html>
