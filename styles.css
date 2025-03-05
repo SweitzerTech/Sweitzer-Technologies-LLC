@@ -88,24 +88,28 @@ body {
 }
 
 @media (max-width: 768px) {
-    /* Show the hamburger on smaller screens */
+    /* Show the hamburger icon on small screens */
     .hamburger {
         display: block;
     }
-    
-    /* Hide nav-links by default on mobile */
+
+    /* Hide the navigation links by default on mobile */
     .nav-links {
         display: none;
         flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on your navbar height */
+        right: 0;
         width: 100%;
+        background: #333; /* Optional: add a background color */
+        padding: 10px 0;
     }
-    
-    /* When active, show the nav-links */
+
+    /* When the nav-container has the active class, display the nav-links */
     .nav-container.active .nav-links {
         display: flex;
     }
 }
-
 
 /* Services Grid */
 .grid-services {
