@@ -1,0 +1,14 @@
+# Allow all search engines to crawl the site
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /test/
+Disallow: /backup/
+Disallow: /cgi-bin/
+
+# Allow everything else
+Allow: /
+
+# Specify the location of your sitemap (if available)
+Sitemap: https://yourdomain.com/sitemap.xml
